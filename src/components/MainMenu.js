@@ -1,22 +1,16 @@
-const MainMenu = () => { 
+import './MainMenu.css'
+
+const MainMenu = () => {
     return (
-        <nav style={styles.nav}>
-            <ul style={styles.ulMenu}>menu...</ul>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Conteúdo</li>
+                <li>Comunidade</li>
+                <li>Sobre</li>
+            </ul>
         </nav>
     )
 }
-
-const styles = {
-    nav: {
-        background: '#555',
-        color: '#000',
-        padding: '20px',
-        marginTop: '5px'
-    },
-    ulMenu: {
-        listStyleType: 'none'
-    }
-}
-
 
 export default MainMenu

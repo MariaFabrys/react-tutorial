@@ -1,9 +1,12 @@
+#root{
+    background-color: rgb(224, 224, 224);
+}
 header {
-    background: #000;
+    background: #fff;
     padding: 20px;
 }
 
 header h3{
-    color: #FFF;
+    color: #000;
     margin: 0;
 }
