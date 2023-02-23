@@ -1,15 +1,9 @@
-import './MainMenu.css'
-
+import Box from '@mui/material/Box';
 const MainMenu = () => {
     return (
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Conteúdo</li>
-                <li>Comunidade</li>
-                <li>Sobre</li>
-            </ul>
-        </nav>
+        <Box component='MainMenu'>
+            <h3 >Menu..</h3>
+        </Box>
     )
 }
 

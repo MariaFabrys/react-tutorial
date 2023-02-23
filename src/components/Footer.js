@@ -1,10 +1,10 @@
-import './Footer.css'
+import Box from '@mui/material/Box';
 
 const Footer = () => {
     return (
-        <footer>
-            <p>Direitos autorais</p>
-        </footer>
+        <Box component='Footer'>
+            <h3>Footer</h3>
+        </Box>
     )
 }
 
