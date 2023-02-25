@@ -1,8 +1,8 @@
-import './MainMenu.css'
+import './Sidebar.css'
 import Box from '@mui/material/Box';
 
 
-const MainMenu = () => {
+const Sidebar = () => {
     return (
         <Box component="nav">
             <ul>
@@ -15,4 +15,4 @@ const MainMenu = () => {
     )
 }
 
-export default MainMenu
+export default Sidebar

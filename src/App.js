@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box'
 
 import Header from './components/Header'
-import MainMenu from './components/MainMenu'
+import Menu from './components/Menu'
 import Sidebar from './components/Sidebar'
 import Content from './components/Content'
 import Footer from './components/Footer'
@@ -10,7 +10,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <MainMenu style={styles.MainMenu}/>
+      <Menu/>
       <Box sx={{
         display: 'flex',
       }}>
@@ -22,12 +22,6 @@ const App = () => {
   )
 }
 
-
-const styles = {
- MainMenu:{
-  background: '#836FFF'
- }
-}
 
 
 export default App
