@@ -1,12 +1,33 @@
-import Box from '@mui/material/Box';
+import Box from '@mui/material/Box'
+import Alert from './Alert'
 import photoBunny from './assets/img/coelhoOrelhudo.webp'
-import { ReactComponent as IconCarrinho} from './assets/img/carrinho.svg';
+import { ReactComponent as IconCarrinho} from './assets/img/carrinho.svg'
+
 import {GiStarfighter as IconStar} from 'react-icons/gi'
+import { AiOutlineCheckas as IconCheck} from 'react-icons/ai'
+import { BiError as IconError} from 'react-icons/bi'
+import { BiInfoCircle as IconInfo} from 'react-icons/bi'
+import { AiOutlineWarning as IconWarning} from 'react-icons/ai'
 
 const Content = () => {
     return (
         <Box component="Content" sx={styles.Box}>
             <h3 style={styles.h3}> Content</h3>
+
+            <Alert type="success ">
+                Deu certo!
+            </Alert>
+            <Alert type="error">
+                Deu erro!
+            </Alert>
+            <Alert type="info">
+
+                Info!
+            </Alert>
+            <Alert type="warning">
+
+                Warning!
+            </Alert>
 
             <img
               style={{width: 500, height: 333.23}}
@@ -20,7 +41,9 @@ const Content = () => {
               alt='Bunny2'>
             </img>
 
-            
+            <br/>
+
+            {/* ReactComponent */}
             <IconCarrinho style={{width: 30, height: 30}}/>
 
             <IconStar style={{width: 40, height: 30, color:'#fff'}}/>
@@ -30,7 +53,7 @@ const Content = () => {
 
 const styles = {
     Box: {
-        background: '#ff0d51',
+        background: "#EEE",
         width: "100%",
         padding: "15px"
     },
