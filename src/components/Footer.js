@@ -19,6 +19,7 @@ const styles = {
         margin: "0px"
 
     }
+    
 }
 
 export default Footer

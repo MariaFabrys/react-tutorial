@@ -11,6 +11,8 @@ const Sidebar = () => {
                 <li>Comunidade</li>
                 <li>Sobre</li>
             </ul>
+
+            
         </Box>
     )
 }

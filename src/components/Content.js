@@ -4,17 +4,18 @@ import photoBunny from './assets/img/coelhoOrelhudo.webp'
 import { ReactComponent as IconCarrinho} from './assets/img/carrinho.svg'
 
 import {GiStarfighter as IconStar} from 'react-icons/gi'
-import { AiOutlineCheckas as IconCheck} from 'react-icons/ai'
-import { BiError as IconError} from 'react-icons/bi'
-import { BiInfoCircle as IconInfo} from 'react-icons/bi'
-import { AiOutlineWarning as IconWarning} from 'react-icons/ai'
+import SampleUseState from './SampleUseState'
+
 
 const Content = () => {
     return (
         <Box component="Content" sx={styles.Box}>
+
+            
             <h3 style={styles.h3}> Content</h3>
 
-            <Alert type="success ">
+
+            <Alert type="success" >
                 Deu certo!
             </Alert>
             <Alert type="error">
@@ -28,6 +29,8 @@ const Content = () => {
 
                 Warning!
             </Alert>
+
+            <SampleUseState/>
 
             <img
               style={{width: 500, height: 333.23}}
@@ -60,6 +63,7 @@ const styles = {
     h3: {
         textAlign: "center"
     }
+ 
 }
 
 export default Content
