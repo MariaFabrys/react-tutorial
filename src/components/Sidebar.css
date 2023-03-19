@@ -3,12 +3,15 @@ nav{
     width: 150px;
     height: 600px;
     display: flex;
+    flex-direction: column;
+
 }
 ul{
     padding: 0px;
     display: flex;
     list-style-type: none;
     flex-direction: column;
+    height: 200px;
 
 }
 ul li{
@@ -19,4 +22,15 @@ ul li{
 ul li:hover{
     border-left: 5px solid #ff0d51;
     color: #ff0d51;
+}
+
+div .img-coelhos{
+    display: flex;
+    flex-direction: column;
+
+}
+
+div .icon{
+    display: flex;
+    margin-top: 5px;
 }
