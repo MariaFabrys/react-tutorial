@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import Menu from '../components/Menu'
 import Sidebar from '../components/Sidebar'
 import Footer from '../components/Footer'
+import Content from '../components/Content'
 
 
 const About = () => {
@@ -15,9 +16,10 @@ const About = () => {
         display: 'flex',
       }}>
         <Sidebar />
-        <Box>
+        <Content title="Quem Somos">
             <h1>Quem Somos?</h1>
-        </Box>
+            <p>Venha conhecer mais sobre nosso site!</p>
+        </Content>
       </Box>
       <Footer />
     </>
