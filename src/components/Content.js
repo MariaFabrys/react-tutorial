@@ -1,33 +1,19 @@
 import Box from '@mui/material/Box'
+import { Children } from 'react'
 import Alert from './Alert'
 
 import SampleUseState from './SampleUseState'
 
 
-const Content = () => {
+const Content = ({title, Children}) => {
     return (
         <Box component="Content" sx={styles.Box}>
 
             
-            <h3 style={styles.h3}> Content</h3>
+            <h3 style={styles.h3}> {tittle}</h3>
 
 
-            <Alert type="success" >
-                Deu certo!
-            </Alert>
-            <Alert type="error">
-                Deu erro!
-            </Alert>
-            <Alert type="info">
-
-                Info!
-            </Alert>
-            <Alert type="warning">
-
-                Warning!
-            </Alert>
-
-            <SampleUseState/>
+           {Children}
 
             
             <br/>
