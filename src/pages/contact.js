@@ -4,6 +4,7 @@ import Menu from '../components/Menu'
 import Sidebar from '../components/Sidebar'
 import Footer from '../components/Footer'
 
+
 const Contact = () => {
   return (
     <>
