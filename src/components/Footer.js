@@ -2,7 +2,7 @@ import Box from '@mui/material/Box';
 
 const Footer = () => {
     return (
-        <Box component='Footer' sx={styles.Box}>
+        <Box component='footer' sx={styles.Box}>
             <h3 style={styles.h3}>Footer</h3>
         </Box>
     )
