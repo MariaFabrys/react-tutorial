@@ -9,14 +9,8 @@ import {GiStarfighter as IconStar} from 'react-icons/gi'
 
 const Sidebar = () => {
     return (
-        <Box component="nav">
-            <ul>
-                <li>Home</li>
-                <li>Conteúdo</li>
-                <li>Comunidade</li>
-                <li>Sobre</li>
-            </ul>
-        <div class="img-coelhos">
+        <Box>
+        <div className="img-coelhos">
         <img
               style={{width: 150}}
              src='https://v5j9q4b5.rocketcdn.me/wp-content/uploads/2021/04/coelhos-principais-caracteristicas-e-como-cuidar-dentro-de-casa-960x640.jpg.webp'
@@ -31,7 +25,7 @@ const Sidebar = () => {
         </div>
 
         {/* ReactComponent */}
-        <div class="icon">
+        <div className="icon">
 
             <IconCarrinho style={{width: 30, height: 30}}/>
 
