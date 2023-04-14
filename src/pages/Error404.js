@@ -1,15 +1,12 @@
 import Box from '@mui/material/Box'
 import Header from '../components/Header'
-import Menu from '../components/Menu'
 import Sidebar from '../components/Sidebar'
 import Footer from '../components/Footer'
-
 
 const Error404 = () => {
   return (
     <>
       <Header />
-      <Menu />
       <Box sx={{
         display: 'flex',
       }}>

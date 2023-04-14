@@ -1,7 +1,5 @@
 import Box from '@mui/material/Box'
-
 import Header from '../components/Header'
-import Menu from '../components/Menu'
 import Sidebar from '../components/Sidebar'
 import Content from '../components/Content'
 import Footer from '../components/Footer'
@@ -11,13 +9,12 @@ import SampleUseState from '../components/SampleUseState'
 const Home = () => {
   return (
     <>
-    <Header />
-    <Menu/>
-    <Box sx={{
-      display: 'flex',
-    }}>
-      <Sidebar/>
-      <Content title="Home">
+      <Header />
+      <Box sx={{
+        display: 'flex',
+      }}>
+        <Sidebar />
+        <Content title="Home">
             <Alert type="success" >
                 Deu certo!
             </Alert>
@@ -36,10 +33,9 @@ const Home = () => {
 
             <SampleUseState />
         </Content>
-
-    </Box>
-    <Footer />
-  </>
+      </Box>
+      <Footer />
+    </>
   )
 }
 
