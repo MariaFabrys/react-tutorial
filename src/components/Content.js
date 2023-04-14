@@ -12,7 +12,6 @@ const Content = ({title, Children}) => {
             
             <h3 style={styles.h3}> {title}</h3>
 
-
            {Children}
 
             
