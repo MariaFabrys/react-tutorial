@@ -1,22 +1,22 @@
 import Box from '@mui/material/Box'
-import { Children } from 'react'
-import Alert from './Alert'
+// import { Children } from 'react'
+// import Alert from './Alert'
 
-import SampleUseState from './SampleUseState'
+// import SampleUseState from './SampleUseState'
 
 
 const Content = ({title, Children}) => {
     return (
-        <Box component="Content" sx={styles.Box}>
+        <Box sx={styles.Box}>
 
             
-            <h3 style={styles.h3}> {tittle}</h3>
+            <h3 style={styles.h3}> {title}</h3>
 
 
            {Children}
 
             
-            <br/>
+            <br />
 
 
         </Box>
