@@ -8,6 +8,8 @@ import CardUser from '../components/CardUser'
 
 const Users = () => {
 
+//modal abrir
+  
   const [users, setUsers] = useState(false)
 
   const loadUsers = async () => {
@@ -21,9 +23,13 @@ const Users = () => {
     }
   }
 
+
+  //fica espiando se alguma coisa muda
   useEffect(() => {
     loadUsers()
-  }, [])
+  }, []) //roda uma vez quando o componente é carregado
+
+  
 
   return (
     <>
@@ -33,12 +39,42 @@ const Users = () => {
       }}>
         <Sidebar />
         <Content title="Users">
+          <button onClick={()=> setModalOpen(true)}>Cadastrar User</button>
             {users && 
               users.map(user => (
                 <CardUser key={user.id} user={user} />
               ))
             }
         </Content>
+      </Box>
+
+      <Box className="bgModal" onClick={(event) =>{
+        if(Event.target.className)
+      }}
+      sx=
+      {{position: 'absolute',
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      background: '0000000A0',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center'
+
+
+      }}>
+        <Box sx={{
+          width: '500px',
+          height: '300px',
+          background: '#FFf',
+          borderRadius: '10px',
+          padding: '20px'
+        }}>
+          <h1>Cadastrar User</h1>
+
+
+        </Box>
       </Box>
       <Footer />
     </>
