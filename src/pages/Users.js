@@ -11,6 +11,7 @@ const Users = () => {
   const [users, setUsers] = useState(false)
   const [modalOpen, setModalOpen] = useState(false) 
 
+  //traz os dados do backend
   const loadUsers = async () => {
     try {
       const response = await fetch('http://localhost:3100/user')
@@ -22,6 +23,7 @@ const Users = () => {
     }
   }
 
+  //Dispara quando a página é acrregada pela primeira vez
   useEffect(() => {
     loadUsers()
   }, []) // [] = executa apenas uma vez quando o componente é montado
@@ -29,13 +31,11 @@ const Users = () => {
   const handleSubmit = async (event) => {
     event.preventDefault()
     console.log('Minha funcao de submit')
-    console.log(event.target)
     const name = event.target.name.value 
     const email = event.target.email.value
     const pass = event.target.pass.value
     const avatar = event.target.avatar.value
     const user = {name, email, pass, avatar}
-    console.log(user)
     try {
       const response = await fetch('http://localhost:3100/user',
       {
@@ -65,7 +65,7 @@ const Users = () => {
             <button onClick={() => setModalOpen(true)}>Cadastrar User</button>
             {users && 
               users.map(user => (
-                <CardUser key={user.id} user={user} />
+                <CardUser key={user.id} user={user} setUsers={setUsers} users={users} />
               ))
             }
         </Content>
