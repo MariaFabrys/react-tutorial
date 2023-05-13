@@ -11,7 +11,6 @@ const Users = () => {
   const [users, setUsers] = useState(false)
   const [modalOpen, setModalOpen] = useState(false) 
 
-  //traz os dados do backend
   const loadUsers = async () => {
     try {
       const response = await fetch('http://localhost:3100/user')
@@ -23,7 +22,6 @@ const Users = () => {
     }
   }
 
-  //Dispara quando a página é acrregada pela primeira vez
   useEffect(() => {
     loadUsers()
   }, []) // [] = executa apenas uma vez quando o componente é montado
